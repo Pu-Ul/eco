@@ -1,0 +1,88 @@
+/* --- Variables de Color y Estilos Generales --- */
+:root {
+    --green-primary: #27ae60;
+    --green-dark: #229954;
+    --dark-blue: #2c3e50;
+    --light-gray: #f4f6f7;
+    --text-color: #34495e;
+    --white: #ffffff;
+    --font-headings: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-color);
+}
+
+.logo {
+    font-family: var(--font-headings);
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: var(--dark-blue);
+}
+
+.logo-icon {
+    color: var(--green-primary);
+}
+
+/* Carrusel */
+.carousel-item {
+    height: 60vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-caption {
+    bottom: 20%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.carousel-caption h1 {
+    font-family: var(--font-headings);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Sección CTA (Llamado a la acción) */
+.cta-section {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+.cta-button {
+    background-color: var(--green-primary);
+    border-color: var(--green-primary);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--green-dark);
+    transform: translateY(-3px);
+}
+
+/* Tarjetas (Cards) */
+.feature-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(44, 62, 80, 0.15) !important;
+}
+
+.feature-card .card-title {
+    color: var(--dark-blue);
+    font-family: var(--font-headings);
+    font-weight: 600;
+}
+
+/* Pie de Página */
+.main-footer {
+    background-color: var(--dark-blue);
+    color: var(--light-gray);
+    padding: 20px 0;
+}

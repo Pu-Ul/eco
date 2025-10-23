@@ -1,0 +1,51 @@
+/* --- ESTILOS PARA EL DASHBOARD DE STREAMLIT --- */
+
+/* Contenedor principal de la aplicación */
+[data-testid="stAppViewContainer"] {
+    background-color: #f0f2f6; /* Un gris muy claro */
+}
+
+/* Barra lateral de filtros */
+[data-testid="stSidebar"] {
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Tarjetas de Métricas (KPIs) */
+[data-testid="stMetric"] {
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px; /* BORDES REDONDEADOS */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Títulos H1 (Principal) */
+h1 {
+    color: #27ae60; /* Verde de tu marca */
+    font-weight: bold;
+}
+
+/* Títulos H2 (Secciones) */
+h2, h3 {
+    color: #2c3e50; /* Azul oscuro de tu marca */
+}
+
+/* Contenedor de Gráficos (Añade fondo blanco y bordes) */
+[data-testid="stVerticalBlock"] .stPlotlyChart, 
+[data-testid="stVerticalBlock"] .stDeckGlJsonChart,
+[data-testid="stVerticalBlock"] .stArrowVegaLiteChart,
+[data-testid="stVerticalBlock"] .stGraphvizChart,
+[data-testid="stVerticalBlock"] .stPyplot {
+    background-color: #FFFFFF;
+    border-radius: 10px; /* BORDES REDONDEADOS */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Estilo del "Expander" (Desplegable) */
+[data-testid="stExpander"] {
+    background-color: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+}
