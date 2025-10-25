@@ -14,7 +14,7 @@ except OSError:
 
 # --- Configuración de la Página ---
 st.set_page_config(
-    page_title="Eco-Datos Colombia | EcoFuturo",
+    page_title="🍃 Eco-Datos Colombia | ConcienciaVerde",
     page_icon="🇨🇴",
     layout="wide"
 )
@@ -69,7 +69,7 @@ cargar_css_local("estadistica.css")
 df_completo = cargar_datos_fncer()
 
 # --- Título y explicación ---
-st.title("💡 Eco-Datos Colombia: El Futuro de la Energía Renovable")
+st.title(" 🍃 Eco-Datos Colombia: El Futuro de la Energía Renovable")
 
 with st.expander("Haz clic aquí para entender qué significan estos datos"):
     html_explicacion = cargar_html("explicacion.html")
@@ -170,3 +170,4 @@ if not df_completo.empty:
 
 else:
     st.error("Error Crítico: No se pudieron cargar los datos iniciales de FNCER.")
+
